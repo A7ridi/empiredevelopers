@@ -381,6 +381,8 @@ input[type="submit"]:focus {
   background-size: cover;
   background-position: center;
   align-items: center;
+  justify-content: center;
+  align-content: center;
   display: flex;
 }
 
