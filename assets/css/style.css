@@ -466,9 +466,10 @@ input[type="submit"]:focus {
 /******************** 03. Page Banner ***************** */
 /****************************************************** */
 .banner-section {
-  background: url(../images/banner.png);
+  background: url(../images/property-single-bg.jpeg);
   background-size: cover;
   display: flex;
+  background-color: #000000;
 }
 
 .banner-inner {
@@ -923,8 +924,7 @@ input[type="submit"]:focus {
 
 /* property single */
 .property-single-left {
-  background: url("../images/apartment/property-left.png") no-repeat
-    center/cover;
+  background: url("../images/apartment/property-1.jpg") no-repeat center/cover;
   padding: 40px 40px 40px 55px;
   height: 888px;
   display: flex;
