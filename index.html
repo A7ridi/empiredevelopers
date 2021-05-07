@@ -1,527 +1,671 @@
 <!DOCTYPE html>
 <html lang="zxx">
-
-<head>
-    <meta charset="utf-8">
+  <head>
+    <meta charset="utf-8" />
     <!-- Responsive -->
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"
+    />
     <title>Empire Exotica</title>
 
     <!-- Fav Icons -->
     <!-- <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon"> -->
-    <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
+    <link
+      rel="shortcut icon"
+      href="assets/images/favicon.png"
+      type="image/x-icon"
+    />
 
     <!--   Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&family=Raleway&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/all.css">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&family=Raleway&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/all.css" />
 
     <!-- Stylesheets -->
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/magnific-popup.css">
-    <link rel="stylesheet" href="assets/css/owl.css">
-    <link rel="stylesheet" href="assets/css/leaflet.css">
-    <link rel="stylesheet" href="assets/css/nice-select.css">
-    <link rel="stylesheet" href="assets/css/animate.min.css">
-    <link rel="stylesheet" href="assets/css/spacing.min.css">
-    <link rel="stylesheet" href="assets/css/menu.css">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/responsive.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/magnific-popup.css" />
+    <link rel="stylesheet" href="assets/css/owl.css" />
+    <link rel="stylesheet" href="assets/css/leaflet.css" />
+    <link rel="stylesheet" href="assets/css/nice-select.css" />
+    <link rel="stylesheet" href="assets/css/animate.min.css" />
+    <link rel="stylesheet" href="assets/css/spacing.min.css" />
+    <link rel="stylesheet" href="assets/css/menu.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/responsive.css" />
 
-    <!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script><![endif]-->
+    <!--[if lt IE 9
+      ]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script
+    ><![endif]-->
 
     <style>
-        .pb-70, .py-70 {
-            padding-top: 100px !important;
-        }
+      .pb-70,
+      .py-70 {
+        padding-top: 100px !important;
+      }
     </style>
-</head>
+  </head>
 
-<body>
+  <body>
     <div class="page-wrapper">
+      <!-- Preloader -->
+      <div class="preloader"></div>
 
-        <!-- Preloader -->
-        <div class="preloader"></div>
-
-
-        <!--==================================================================== 
+      <!--==================================================================== 
            Start Header area
         =====================================================================-->
-        <header class="main-header">
-            <!--Header-Upper-->
-            <div class="header-upper">
-                <div class="container clearfix">
+      <header class="main-header">
+        <!--Header-Upper-->
+        <div class="header-upper">
+          <div class="container clearfix">
+            <div class="header-inner">
+              <div class="nav-outer clearfix">
+                <!-- Main Menu -->
+                <nav class="main-menu navbar-expand-lg">
+                  <div class="navbar-header clearfix">
+                    <!-- Toggle Button -->
+                    <button
+                      type="button"
+                      class="navbar-toggle"
+                      data-toggle="collapse"
+                      data-target=".navbar-collapse"
+                    >
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                    </button>
+                  </div>
 
-                    <div class="header-inner">
-
-                        <div class="nav-outer clearfix">
-                            <!-- Main Menu -->
-                            <nav class="main-menu navbar-expand-lg">
-                                <div class="navbar-header clearfix">
-                                    <!-- Toggle Button -->
-                                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                                        <span class="icon-bar"></span>
-                                        <span class="icon-bar"></span>
-                                        <span class="icon-bar"></span>
-                                    </button>
-                                </div>
-
-                                <div class="navbar-collapse collapse clearfix">
-                                    <div class="logo"><a href="index.html"><img src="assets/images/logo.png" alt="Logo"></a></div>
-                                    <ul class="navigation clearfix">
-                                        <li class="current"><a href="index.html">Home</a></li>
-                                        <li><a href="property.html">Scheme</a></li>
-                                        <li><a href="services.html">Projects</a></li>
-                                        <li><a href="contact.html">Contact us</a></li>
-                                    </ul>
-                                </div>
-                            </nav>
-                            <!-- Main Menu End-->
-                        </div>
-
-                        <div class="menu-icons">
-                            <!-- menu sidbar -->
-                            <div class="menu-sidebar">
-                                <button>
-                                    <span class="icon-bar"></span>
-                                    <span class="icon-bar"></span>
-                                    <span class="icon-bar"></span>
-                                </button>
-                            </div>
-                        </div>
-
+                  <div class="navbar-collapse collapse clearfix">
+                    <div class="logo">
+                      <a href="index.html"
+                        ><img src="assets/images/logo.png" alt="Logo"
+                      /></a>
                     </div>
+                    <ul class="navigation clearfix">
+                      <li class="current"><a href="index.html">Home</a></li>
+                      <li><a href="property.html">Scheme</a></li>
+                      <li><a href="services.html">Projects</a></li>
+                      <li><a href="contact.html">Contact us</a></li>
+                    </ul>
+                    <button class="p-10" style="cursor: pointer">
+                      Download Brochure
+                    </button>
+                  </div>
+                </nav>
+                <!-- Main Menu End-->
+              </div>
 
+              <div class="menu-icons">
+                <!-- menu sidbar -->
+                <div class="menu-sidebar">
+                  <button>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                  </button>
                 </div>
+              </div>
             </div>
-            <!--End Header Upper-->
-
-        </header>
-        <!--==================================================================== 
+          </div>
+        </div>
+        <!--End Header Upper-->
+      </header>
+      <!--==================================================================== 
            End Header area
         =====================================================================-->
-        
-        <!--Form Back Drop-->
-        <div class="form-back-drop"></div>
 
-        <!-- Hidden Sidebar -->
-        <section class="hidden-bar">
-            <div class="inner-box text-center">
-                <div class="cross-icon"><span class="fa fa-times"></span></div>
-                <div class="title">
-                    <h3>Get Appointment</h3>
-                </div>
+      <!--Form Back Drop-->
+      <div class="form-back-drop"></div>
 
-                <!--Appointment Form-->
-                <div class="appointment-form">
-                    <form name="contact" method="POST" data-netlify="true">
-                        <div class="form-group">
-                            <input type="text" name="text" value="" placeholder="Name" required>
-                        </div>
-                        <div class="form-group">
-                            <input type="email" name="email" value="" placeholder="Email Address" required>
-                        </div>
-                        <div class="form-group">
-                            <input type="text" name="phone" value="" placeholder="Phone no." required>
-                        </div>
-                        <div class="form-group">
-                            <textarea placeholder="Message" rows="5"></textarea>
-                        </div>
-                        <div class="form-group">
-                            <button type="submit" class="theme-btn">Submit now</button>
-                        </div>
-                    </form>
-                </div>
+      <!-- Hidden Sidebar -->
+      <section class="hidden-bar">
+        <div class="inner-box text-center">
+          <div class="cross-icon"><span class="fa fa-times"></span></div>
+          <div class="title">
+            <h3>Get Appointment</h3>
+          </div>
 
-                <!--Social Icons-->
-                <div class="social-icons">
-                    <a href="#"><i class="fab fa-twitter"></i></a>
-                    <a href="#"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#"><i class="fab fa-instagram"></i></a>
-                    <a href="#"><i class="fab fa-pinterest-p"></i></a>
-                </div>
-            </div>
-        </section>
-        <!--End Hidden Sidebar -->
+          <!--Appointment Form-->
+          <div class="appointment-form">
+            <form name="contact" method="POST" data-netlify="true">
+              <div class="form-group">
+                <input
+                  type="text"
+                  name="text"
+                  value=""
+                  placeholder="Name"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <input
+                  type="email"
+                  name="email"
+                  value=""
+                  placeholder="Email Address"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <input
+                  type="text"
+                  name="phone"
+                  value=""
+                  placeholder="Phone no."
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <textarea placeholder="Message" rows="5"></textarea>
+              </div>
+              <div class="form-group">
+                <button type="submit" class="theme-btn">Submit now</button>
+              </div>
+            </form>
+          </div>
 
+          <!--Social Icons-->
+          <div class="social-icons">
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-pinterest-p"></i></a>
+          </div>
+        </div>
+      </section>
+      <!--End Hidden Sidebar -->
 
-        <!--==================================================================== 
+      <!--==================================================================== 
             Start Hero Section
         =====================================================================-->
-        <section class="hero-section text-center mt-110 rmt-70" style="background-image: url('assets/images/landing-page.jpg'); ">
-        </section>
-        <!--==================================================================== 
+      <section
+        class="hero-section text-center mt-110 rmt-70"
+        style="background-image: url('assets/images/landing-page.jpg')"
+      ></section>
+      <!--==================================================================== 
             End Hero Section
         =====================================================================-->
 
-
-
-        <!--==================================================================== 
+      <!--==================================================================== 
             Start WordPress Section
         =====================================================================-->
-        <section id="wordpress" class="wp-section pt-150 rmb-100" style="background-image: url('assets/images/wp/wp-bg.png');">
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-lg-7">
-                        <img src="assets/images/wp/b2.jpg" alt="Apartment">
-                        <div class="wp-images rmb-150">
-                        </div>
-                    </div>
-                    <div class="col-lg-5">
-                        <div class="wp-content ml-50 rml-0 rpt-30">
-                            <div class="section-title mb-10">
-                                <h2>WELCOME TO YOUR NEW ADDRESS</h2>
-                            </div>
-                            <p>
-                                With a dream in mind and passion at heart, eventuated a project of residential complex  which will contain not only the state of the art amenities but also guarantees the finest quality with affordability.
-
-                                Where the interests of our customers are always a top priority, we,” The Empire Developers  “ have  in the midst of serene and verdure part of
-                                Guwahati –near Ganeshguri (around 3.5km) launched  a project which will contain not only the basic amenities but also facilities to serve people across the age –from cradle to octogenarian - is a project of nonpareil .
-
-                                Whose quality is the synonym; the project is verified through the prestigious IIT-Guwahati and is built in an unencumbered land having automated
-                                elevators, library, flower garden, theme park and well spacious surroundings providing unparalleled safety and security for all the customers.                                </p>
-
-                        </div>
-                    </div>
-                </div>
+      <section
+        id="wordpress"
+        class="wp-section pt-150 rmb-100"
+        style="background-image: url('assets/images/wp/wp-bg.png')"
+      >
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-lg-7">
+              <img src="assets/images/wp/b2.jpg" alt="Apartment" />
+              <div class="wp-images rmb-150"></div>
             </div>
-        </section>
-        <!--==================================================================== 
+            <div class="col-lg-5">
+              <div class="wp-content ml-50 rml-0 rpt-30">
+                <div class="section-title mb-10">
+                  <h2>WELCOME TO YOUR NEW ADDRESS</h2>
+                </div>
+                <p>
+                  With a dream in mind and passion at heart, eventuated a
+                  project of residential complex which will contain not only the
+                  state of the art amenities but also guarantees the finest
+                  quality with affordability. Where the interests of our
+                  customers are always a top priority, we,” The Empire
+                  Developers “ have in the midst of serene and verdure part of
+                  Guwahati –near Ganeshguri (around 3.5km) launched a project
+                  which will contain not only the basic amenities but also
+                  facilities to serve people across the age –from cradle to
+                  octogenarian - is a project of nonpareil . Whose quality is
+                  the synonym; the project is verified through the prestigious
+                  IIT-Guwahati and is built in an unencumbered land having
+                  automated elevators, library, flower garden, theme park and
+                  well spacious surroundings providing unparalleled safety and
+                  security for all the customers.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--==================================================================== 
             End WordPress Section
         =====================================================================-->
 
-
-
-        <!--==================================================================== 
+      <!--==================================================================== 
             Start Services Section
         =====================================================================-->
-        <section class="services-section pt-250 rpt-100 pb-70" style="background-image: url('assets/images/services/service-bg.jpg');">
-            <div class="container">
-                <h2 class="text-bold text-black" style="text-align: center">Features & Benefits</h2>
-                <div class="row">
-                    <div class="col-lg-6 col-md-12">
-                        <div class="service-item">
-                            <span class="number">01</span>
-                            <img src="assets/images/services/swimming.jpg" alt="Icon">
-                            <h3>Swimming Pool</h3>
-                            <p>Get an indoor swimming pool to enjoy a warm day.</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 col-md-12">
-                        <div class="service-item">
-                            <span class="number">02</span>
-                            <img src="assets/images/services/security.jpeg" alt="Icon">
-                            <h3>Safe and Secure</h3>
-                            <p>Security 24/7 ,CCTV cameras installed.So you can be worry free.</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 col-md-12">
-                        <div class="service-item">
-                            <span class="number">03</span>
-                            <img src="assets/images/services/gym.jpeg" alt="Icon">
-                            <h3>Gymnasium</h3>
-                            <p>Gymnasium equiped with latest machines indoor,so you can stay healthy and fit.</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 col-md-12">
-                        <div class="service-item">
-                            <span class="number">04</span>
-                            <img src="assets/images/services/park.jpg" alt="Icon">
-                            <h3>Playground and Park</h3>
-                            <p>Large playground so your children and you can enjoy the greenery and fresh air.</p>
-                        </div>
-                    </div>
-                </div>
+      <section
+        class="services-section pt-250 rpt-100 pb-70"
+        style="background-image: url('assets/images/services/service-bg.jpg')"
+      >
+        <div class="container">
+          <h2 class="text-bold text-black" style="text-align: center">
+            Features & Benefits
+          </h2>
+          <div class="row">
+            <div class="col-lg-6 col-md-12">
+              <div class="service-item">
+                <span class="number">01</span>
+                <img src="assets/images/services/swimming.jpg" alt="Icon" />
+                <h3>Swimming Pool</h3>
+                <p>Get an indoor swimming pool to enjoy a warm day.</p>
+              </div>
             </div>
-        </section>
-        <!--==================================================================== 
+            <div class="col-lg-6 col-md-12">
+              <div class="service-item">
+                <span class="number">02</span>
+                <img src="assets/images/services/security.jpeg" alt="Icon" />
+                <h3>Safe and Secure</h3>
+                <p>
+                  Security 24/7 ,CCTV cameras installed.So you can be worry
+                  free.
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-6 col-md-12">
+              <div class="service-item">
+                <span class="number">03</span>
+                <img src="assets/images/services/gym.jpeg" alt="Icon" />
+                <h3>Gymnasium</h3>
+                <p>
+                  Gymnasium equiped with latest machines indoor,so you can stay
+                  healthy and fit.
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-6 col-md-12">
+              <div class="service-item">
+                <span class="number">04</span>
+                <img src="assets/images/services/park.jpg" alt="Icon" />
+                <h3>Playground and Park</h3>
+                <p>
+                  Large playground so your children and you can enjoy the
+                  greenery and fresh air.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--==================================================================== 
             End Services Section
         =====================================================================-->
 
-
-
-        <!--==================================================================== 
+      <!--==================================================================== 
             Start Video Section
         =====================================================================-->
-        <div class="video-section">
-            <div class="container">
-                <div class="video-inner">
-                    <img src="assets/images/video/thumbnail.png" alt="Video">
-                    <a href="https://www.youtube.com/watch?v=VpugEDNwK_c" class="video-play mfp-iframe"><i class="fas fa-play"></i></a>
-                </div>
-            </div>
+      <div class="video-section">
+        <div class="container">
+          <div class="video-inner">
+            <img src="assets/images/video/thumbnail.png" alt="Video" />
+            <a
+              href="https://www.youtube.com/watch?v=VpugEDNwK_c"
+              class="video-play mfp-iframe"
+              ><i class="fas fa-play"></i
+            ></a>
+          </div>
         </div>
-        <!--==================================================================== 
+      </div>
+      <!--==================================================================== 
             End Video Section
         =====================================================================-->
 
+      <br />
+      <br />
+      <br />
 
-        <br>
-        <br>
-        <br>
-
-
-
-        <!--==================================================================== 
+      <!--==================================================================== 
             Start Restaurants Section
         =====================================================================-->
-        <section class="rastaurant-section mb-155">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-lg-6 pr-0">
-                        <div class="rastaurant-left"></div>
-                    </div>
-                    <div class="col-lg-6 pl-0">
-                        <!-- pt-240 pb-250 rpt-140 rpb-150 -->
-                        <div class="rastaurant-right pb-250 pt-20">
-                            <div class="ras-content pl-70" >
-                                <!-- <h2 class="border-text">Restaurants</h2>
-                                <h2 class="text-white">School<br> Shopping Mall<br> Hospital</h2> -->
-                                    <h2 style="font-size: 2.3rem;">LIVE WITH MORE SPACE</h2>
-                                    <p class="text-white">
-                                        At Empire Exotica we have always focused and believed on spacious living. 
-                                        So we have designed all the apartments with enough spaces for a hassle free living. With the state-of-the art architecture crafted in line to exotic quality of living, the project is expanded around 1 Lakh sq ft area with apartments starting from 1172 sq ft (2BHK) to 3294 sq ft (Duplex)
-                                        Want some more space? We also have customized plans.
-                                    </p>
-                                </div>
-                        </div>
-                    </div>
-                </div>
+      <section class="rastaurant-section mb-155">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-lg-6 pr-0">
+              <div class="rastaurant-left"></div>
             </div>
-        </section>
-        <!--==================================================================== 
+            <div class="col-lg-6 pl-0">
+              <!-- pt-240 pb-250 rpt-140 rpb-150 -->
+              <div class="rastaurant-right pb-250 pt-20">
+                <div class="ras-content pl-70">
+                  <!-- <h2 class="border-text">Restaurants</h2>
+                                <h2 class="text-white">School<br> Shopping Mall<br> Hospital</h2> -->
+                  <h2 style="font-size: 2.3rem">LIVE WITH MORE SPACE</h2>
+                  <p class="text-white">
+                    At Empire Exotica we have always focused and believed on
+                    spacious living. So we have designed all the apartments with
+                    enough spaces for a hassle free living. With the
+                    state-of-the art architecture crafted in line to exotic
+                    quality of living, the project is expanded around 1 Lakh sq
+                    ft area with apartments starting from 1172 sq ft (2BHK) to
+                    3294 sq ft (Duplex) Want some more space? We also have
+                    customized plans.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--==================================================================== 
             End Restaurants Section
         =====================================================================-->
 
-
-
-        <!--==================================================================== 
+      <!--==================================================================== 
             Start Apartment Section
         =====================================================================-->
-        <section class="apartment-section text-center mb-155">
-            <div class="container">
-                <div class="section-title mb-75">
-                    <h2>Choose an <span class="thin">Apartment</span></h2>
-                    <!-- <p>At vero eos et accusamus et iusto odio</p> -->
-                </div>
-                <div class="apartment-carousel owl-carousel">
-                    <div class="apartment-item">
-                        <div class="apartment-img">
-                            <img src="assets/images/apartment/2bhk.jpg" alt="Apartment">
-                        </div>
-                        <div class="apartment-content">
-                            <img src="assets/images/apartment/icon1.png" alt="Icon">
-                            <h3><a href="property-single.html">2 BHK APARTMENT</a></h3>
-                            <span>Starts from 45 Lakhs</span>
-                            <p>Click to see more.</p>
-                        </div>
-                    </div>
-                    <div class="apartment-item">
-                        <div class="apartment-content">
-                            <img src="assets/images/apartment/icon2.png" alt="Icon">
-                            <h3><a href="property-single.html">3 BHK APARTMENT</a></h3>
-                            <span>Starts from 48 Lakhs</span>
-                            <p>Click to see more.</p>
-                        </div>
-                        <div class="apartment-img">
-                            <img src="assets/images/apartment/3bhk.jpg" alt="Apartment">
-                        </div>
-                    </div>
-                    <div class="apartment-item">
-                        <div class="apartment-img">
-                            <img src="assets/images/apartment/4bhk.jpg" alt="Apartment">
-                        </div>
-                        <div class="apartment-content">
-                            <img src="assets/images/apartment/icon3.png" alt="Icon">
-                            <h3><a href="property-single.html">4 BHK APARTMENT</a></h3>
-                            <span>Starts from 70 Lakhs</span>
-                            <p>Click to see more.</p>
-                        </div>
-                    </div>
-                    <div class="apartment-item">
-                        <div class="apartment-content">
-                            <img src="assets/images/apartment/icon2.png" alt="Icon">
-                            <h3><a href="property-single.html">Duplex Apartment</a></h3>
-                            <span>Starts from 1.20 Crore</span>
-                            <p>Click to see more.</p>
-                        </div>
-                        <div class="apartment-img">
-                            <img src="assets/images/apartment/duplex.jpg" alt="Apartment">
-                        </div>
-                    </div>
-                </div>
+      <section class="apartment-section text-center mb-155">
+        <div class="container">
+          <div class="section-title mb-75">
+            <h2>Choose an <span class="thin">Apartment</span></h2>
+            <!-- <p>At vero eos et accusamus et iusto odio</p> -->
+          </div>
+          <div class="apartment-carousel owl-carousel">
+            <div class="apartment-item">
+              <div class="apartment-img">
+                <img src="assets/images/apartment/2bhk.jpg" alt="Apartment" />
+              </div>
+              <div class="apartment-content">
+                <img src="assets/images/apartment/icon1.png" alt="Icon" />
+                <h3><a href="property-single.html">2 BHK APARTMENT</a></h3>
+                <span>Starts from 45 Lakhs</span>
+                <p>Click to see more.</p>
+              </div>
             </div>
-        </section>
-        <!--==================================================================== 
+            <div class="apartment-item">
+              <div class="apartment-content">
+                <img src="assets/images/apartment/icon2.png" alt="Icon" />
+                <h3><a href="property-single.html">3 BHK APARTMENT</a></h3>
+                <span>Starts from 48 Lakhs</span>
+                <p>Click to see more.</p>
+              </div>
+              <div class="apartment-img">
+                <img src="assets/images/apartment/3bhk.jpg" alt="Apartment" />
+              </div>
+            </div>
+            <div class="apartment-item">
+              <div class="apartment-img">
+                <img src="assets/images/apartment/4bhk.jpg" alt="Apartment" />
+              </div>
+              <div class="apartment-content">
+                <img src="assets/images/apartment/icon3.png" alt="Icon" />
+                <h3><a href="property-single.html">4 BHK APARTMENT</a></h3>
+                <span>Starts from 70 Lakhs</span>
+                <p>Click to see more.</p>
+              </div>
+            </div>
+            <div class="apartment-item">
+              <div class="apartment-content">
+                <img src="assets/images/apartment/icon2.png" alt="Icon" />
+                <h3><a href="property-single.html">Duplex Apartment</a></h3>
+                <span>Starts from 1.20 Crore</span>
+                <p>Click to see more.</p>
+              </div>
+              <div class="apartment-img">
+                <img src="assets/images/apartment/duplex.jpg" alt="Apartment" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--==================================================================== 
             End Apartment Section
         =====================================================================-->
 
-
-        <!--==================================================================== 
+      <!--==================================================================== 
             Start Success Section
         =====================================================================-->
-        <section class="success-section mb-115">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xl-4 col-md-6">
-                        <div class="success-box">
-                            <span class="count-text" data-speed="5000" data-stop="100000">0</span>
-                            <div class="success-content">
-                                <h3>Square Areas</h3>
-                                <h6>Complex</h6>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-4 col-md-6">
-                        <div class="success-box">
-                            <span class="count-text" data-speed="5000" data-stop="78">0</span>
-                            <div class="success-content">
-                                <h3>Happy</h3>
-                                <h6>Clients</h6>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-4 col-md-6">
-                        <div class="success-box">
-                            <span class="count-text" data-speed="5000" data-stop="150">0</span>
-                            <div class="success-content">
-                                <h3>Apartment</h3>
-                                <h6>Complex</h6>
-                            </div>
-                        </div>
-                    </div>
+      <section class="success-section mb-115">
+        <div class="container">
+          <div class="row">
+            <div class="col-xl-4 col-md-6">
+              <div class="success-box">
+                <span class="count-text" data-speed="5000" data-stop="100000"
+                  >0</span
+                >
+                <div class="success-content">
+                  <h3>Square Areas</h3>
+                  <h6>Complex</h6>
                 </div>
+              </div>
             </div>
-        </section>
-        <!--==================================================================== 
+            <div class="col-xl-4 col-md-6">
+              <div class="success-box">
+                <span class="count-text" data-speed="5000" data-stop="78"
+                  >0</span
+                >
+                <div class="success-content">
+                  <h3>Happy</h3>
+                  <h6>Clients</h6>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-4 col-md-6">
+              <div class="success-box">
+                <span class="count-text" data-speed="5000" data-stop="150"
+                  >0</span
+                >
+                <div class="success-content">
+                  <h3>Apartment</h3>
+                  <h6>Complex</h6>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--==================================================================== 
             End Success Section
         =====================================================================-->
 
-
-
-        <!--==================================================================== 
+      <!--==================================================================== 
             Start FAQ Section
         =====================================================================-->
-        <section class="faq-section">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-lg-6 pr-125 rpr-15">
-                        <div class="faq-left-image"></div>
-                    </div>
-                    <div class="col-lg-6 pl-0">
-                        <div class="faq-accordion ras-content pt-95 pb-110 rpb-0 rmb-100">
-                           <div class="section-title mb-35">
-                                <h3>LOCATED AT THE HEART OF THE CITY</h3>
-                            </div>
-                            <div id="accordion">
-                                <div class="card">
-                                    <div class="card-header">
-                                        <a class="collapsed card-link" data-toggle="collapse" href="#collapseOne">
-                                            Easily Communicable
-                                        </a>
-                                    </div>
-                                    <div id="collapseOne" class="collapse" data-parent="#accordion">
-                                        <div class="card-body">
-                                            Located centrally in Dakshingaon, Kahilipara, Empire Exotica is a perfectly located to communicate with the major parts of the city.                                        </div>
-                                    </div>
-                                </div>
-                                <div class="card">
-                                    <div class="card-header">
-                                        <a class="collapsed card-link" data-toggle="collapse" href="#collapseTwo">
-                                            Broad Pavemented Road
-                                        </a>
-                                    </div>
-                                    <div id="collapseTwo" class="collapse" data-parent="#accordion">
-                                        <div class="card-body">
-                                            Newly constructed broad Pavemented Dakshingaon-Lokhra road with side parkings and cycling tracks to provide absolute ease of access.                                        </div>
-                                    </div>
-                                </div>
-                                <div class="card">
-                                    <div class="card-header">
-                                        <a class="collapsed card-link" data-toggle="collapse" href="#collapseThree">
-                                            Hospitals nearby
-                                        </a>
-                                    </div>
-                                    <div id="collapseThree" class="collapse show" data-parent="#accordion">
-                                        <div class="card-body">
-                                            Major hospitals and healthcare facilities such as Hayat Hospital, Apollo and Gauhati Medical College fall in the vicinity for easy access in case of emergency.                                        </div>
-                                    </div>
-                                </div>
-                                <div class="card">
-                                    <div class="card-header">
-                                        <a class="card-link" data-toggle="collapse" href="#collapseFour">
-                                            Schools and Colleges
-                                        </a>
-                                    </div>
-                                    <div id="collapseFour" class="collapse" data-parent="#accordion">
-                                        <div class="card-body">
-                                            Major educational institutes and Colleges are located in the vicinity.                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="faq-right-bg">
-                            <img src="assets/images/faq/faq-right-bg.png" alt="FAQ">
-                        </div>
-                    </div>
-                </div>
+      <section class="faq-section">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-lg-6 pr-125 rpr-15">
+              <div class="faq-left-image"></div>
             </div>
-        </section>
-        <!--==================================================================== 
+            <div class="col-lg-6 pl-0">
+              <div class="faq-accordion ras-content pt-95 pb-110 rpb-0 rmb-100">
+                <div class="section-title mb-35">
+                  <h3>LOCATED AT THE HEART OF THE CITY</h3>
+                </div>
+                <div id="accordion">
+                  <div class="card">
+                    <div class="card-header">
+                      <a
+                        class="collapsed card-link"
+                        data-toggle="collapse"
+                        href="#collapseOne"
+                      >
+                        Easily Communicable
+                      </a>
+                    </div>
+                    <div
+                      id="collapseOne"
+                      class="collapse"
+                      data-parent="#accordion"
+                    >
+                      <div class="card-body">
+                        Located centrally in Dakshingaon, Kahilipara, Empire
+                        Exotica is a perfectly located to communicate with the
+                        major parts of the city.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-header">
+                      <a
+                        class="collapsed card-link"
+                        data-toggle="collapse"
+                        href="#collapseTwo"
+                      >
+                        Broad Pavemented Road
+                      </a>
+                    </div>
+                    <div
+                      id="collapseTwo"
+                      class="collapse"
+                      data-parent="#accordion"
+                    >
+                      <div class="card-body">
+                        Newly constructed broad Pavemented Dakshingaon-Lokhra
+                        road with side parkings and cycling tracks to provide
+                        absolute ease of access.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-header">
+                      <a
+                        class="collapsed card-link"
+                        data-toggle="collapse"
+                        href="#collapseThree"
+                      >
+                        Hospitals nearby
+                      </a>
+                    </div>
+                    <div
+                      id="collapseThree"
+                      class="collapse show"
+                      data-parent="#accordion"
+                    >
+                      <div class="card-body">
+                        Major hospitals and healthcare facilities such as Hayat
+                        Hospital, Apollo and Gauhati Medical College fall in the
+                        vicinity for easy access in case of emergency.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-header">
+                      <a
+                        class="card-link"
+                        data-toggle="collapse"
+                        href="#collapseFour"
+                      >
+                        Schools and Colleges
+                      </a>
+                    </div>
+                    <div
+                      id="collapseFour"
+                      class="collapse"
+                      data-parent="#accordion"
+                    >
+                      <div class="card-body">
+                        Major educational institutes and Colleges are located in
+                        the vicinity.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="faq-right-bg">
+                <img src="assets/images/faq/faq-right-bg.png" alt="FAQ" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--==================================================================== 
             End FAQ Section
         =====================================================================-->
 
-
-
-        <!--==================================================================== 
+      <!--==================================================================== 
             Start Contact Section
         =====================================================================-->
-        <section class="contact-section mb-250" style="background-image: url('assets/images/contact/contact-bg.jpg');">
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-xl-8 col-lg-10">
-                        <form class="contact-form bg-white mt-100 rmt-0" name="contact" method="POST" data-netlify="true">
-                           <div class="section-title text-center mb-40">
-                               <h2>Request a Visit</h2>
-                           </div>
-                            <div class="row clearfix">
-                                <div class="col-md-12">
-                                    <div class="form-group">
-                                        <input type="text" name="name" id="name" class="form-control" required="" placeholder="Enter Your Name">
-                                    </div>
-                                </div>
-                                <div class="col-md-12">
-                                    <div class="form-group">
-                                        <input type="email" name="email" id="email" class="form-control" required="" placeholder="Enter Your Email">
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <input type="text" name="date" id="date" class="form-control" placeholder="Date">
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <input type="text" name="time" id="time" class="form-control" placeholder="Time">
-                                    </div>
-                                </div>
-                                <div class="col-md-12">
-                                    <div class="form-group">
-                                        <textarea name="message" id="message" class="form-control" rows="4" required="" placeholder="Message"></textarea>
-                                    </div>
-                                </div>
-                                <div class="col-md-12">
-                                    <button type="submit" class="theme-btn mt-40">Send</button>
-                                </div>
-                            </div>
-                            <div class="title-rotated">contact</div>
-                        </form>
-                    </div>
+      <section
+        class="contact-section mb-250"
+        style="background-image: url('assets/images/contact/contact-bg.jpg')"
+      >
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-xl-8 col-lg-10">
+              <form
+                class="contact-form bg-white mt-100 rmt-0"
+                name="contact"
+                method="POST"
+                data-netlify="true"
+              >
+                <div class="section-title text-center mb-40">
+                  <h2>Request a Visit</h2>
                 </div>
+                <div class="row clearfix">
+                  <div class="col-md-12">
+                    <div class="form-group">
+                      <input
+                        type="text"
+                        name="name"
+                        id="name"
+                        class="form-control"
+                        required=""
+                        placeholder="Enter Your Name"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-md-12">
+                    <div class="form-group">
+                      <input
+                        type="email"
+                        name="email"
+                        id="email"
+                        class="form-control"
+                        required=""
+                        placeholder="Enter Your Email"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <input
+                        type="text"
+                        name="date"
+                        id="date"
+                        class="form-control"
+                        placeholder="Date"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <input
+                        type="text"
+                        name="time"
+                        id="time"
+                        class="form-control"
+                        placeholder="Time"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-md-12">
+                    <div class="form-group">
+                      <textarea
+                        name="message"
+                        id="message"
+                        class="form-control"
+                        rows="4"
+                        required=""
+                        placeholder="Message"
+                      ></textarea>
+                    </div>
+                  </div>
+                  <div class="col-md-12">
+                    <button type="submit" class="theme-btn mt-40">Send</button>
+                  </div>
+                </div>
+                <div class="title-rotated">contact</div>
+              </form>
             </div>
-        </section>
+          </div>
+        </div>
+      </section>
 
-        <footer
+      <footer
         class="footer-section pt-220"
         style="background-image: url('assets/images/footer.png')"
       >
@@ -593,9 +737,7 @@
                 </p>
               </div>
               <div class="copyright">
-                <p>
-                  Developed by Compos Mentis Impressions
-                </p>
+                <p>Developed by Compos Mentis Impressions</p>
               </div>
             </div>
           </div>
