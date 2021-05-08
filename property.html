@@ -22,6 +22,10 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="assets/css/all.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
 
     <!-- Stylesheets -->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
@@ -34,10 +38,27 @@
     <link rel="stylesheet" href="assets/css/menu.css" />
     <link rel="stylesheet" href="assets/css/style.css" />
     <link rel="stylesheet" href="assets/css/responsive.css" />
+
     <style>
       .pb-70,
       .py-70 {
         padding-top: 100px !important;
+      }
+      .button-brochure {
+        cursor: pointer;
+        background-color: #fff;
+        color: #333;
+        border-radius: 5px;
+      }
+      .button-brochure:hover {
+        background-color: #ca9c6a;
+        color: white;
+      }
+      .button-brochure a {
+        color: #333;
+      }
+      .button-brochure a:hover {
+        color: #fff;
       }
     </style>
   </head>
@@ -47,9 +68,6 @@
       <!-- Preloader -->
       <div class="preloader"></div>
 
-      <!--==================================================================== 
-           Start Header area
-        =====================================================================-->
       <header class="main-header">
         <!--Header-Upper-->
         <div class="header-upper">
@@ -79,15 +97,19 @@
                       /></a>
                     </div>
                     <ul class="navigation clearfix">
-                      <li><a href="index.html">Home</a></li>
-                      <li class="current">
-                        <a href="property.html">Scheme</a>
-                      </li>
+                      <li class="current"><a href="index.html">Home</a></li>
+                      <li><a href="property.html">Scheme</a></li>
                       <li><a href="services.html">Projects</a></li>
                       <li><a href="contact.html">Contact us</a></li>
                     </ul>
-                    <button class="p-10" style="cursor: pointer">
-                      Download Brochure
+                    <button class="p-10 ml-30 button-brochure">
+                      <i class="fa fa-download mr-5"></i>
+                      <a
+                        href="assets/images/services/gym.jpeg"
+                        download="E Brochure"
+                      >
+                        E Brochure
+                      </a>
                     </button>
                   </div>
                 </nav>
