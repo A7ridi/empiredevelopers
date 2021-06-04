@@ -837,6 +837,11 @@ input[type="submit"]:focus {
   padding: 35px 50px;
   margin-bottom: 30px;
   border: 1px solid #e1e1e1;
+  cursor: pointer;
+}
+
+.apartment-content > span p {
+  color: #000;
 }
 
 .apartment-content img,
@@ -1164,7 +1169,7 @@ input[type="submit"]:focus {
 
 .contact-form {
   padding: 75px 100px;
-  transform: translateY(222px);
+  /* transform: translateY(222px); */
   position: relative;
   z-index: 5;
   box-shadow: 0 13px 21px rgba(213, 213, 213, 0.3);
