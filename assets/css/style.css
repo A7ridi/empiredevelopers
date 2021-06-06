@@ -1049,6 +1049,9 @@ input[type="submit"]:focus {
   -webkit-text-stroke: 1px #e1e1e1;
   transform: translate(12px, -3%) scale(1.5);
 }
+.success-content {
+  z-index: 1;
+}
 
 .success-content h3 {
   color: #ca9c6a;
@@ -1587,4 +1590,21 @@ blockquote {
     right: 10px;
     font-size: 22px;
   }
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 70%;
+  border: 1px solid #ddd;
+}
+
+th,
+td {
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
 }
