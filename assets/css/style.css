@@ -840,6 +840,10 @@ input[type="submit"]:focus {
   cursor: pointer;
 }
 
+.apartment-content:hover {
+  background: #e6e7e7;
+}
+
 .apartment-content > span p {
   color: #000;
 }
