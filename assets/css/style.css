@@ -1170,8 +1170,33 @@ input[type="submit"]:focus {
 /**************** 12. Contact Section  **************** */
 /****************************************************** */
 .contact-section {
-  background-size: cover;
+  /* background-size: cover;
+  background-position: center; */
+  background-image: url("/assets/images/coming-soon.png");
+  height: 100%;
   background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.theme-btn {
+  background: rgb(23, 35, 136);
+}
+@media (max-width: 992px) {
+}
+@media (min-width: 992.1px) and (max-width: 1200px) {
+}
+@media (max-width: 992px) {
+}
+@media (min-width: 750px) and (max-width: 768px) {
+}
+@media (min-width: 327px) and (max-width: 767px) {
+  .contact-section {
+    background-image: url("/assets/images/coming-soon.png");
+    height: 100%;
+    width: auto;
+  }
+}
+@media (min-width: 992px) and (max-width: 1200px) {
 }
 
 .contact-form {
