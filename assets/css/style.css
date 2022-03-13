@@ -1195,6 +1195,10 @@ input[type="submit"]:focus {
     height: 100%;
     width: auto;
   }
+  section.text-center iframe {
+    width: 360px;
+    height: 300px;
+  }
 }
 @media (min-width: 992px) and (max-width: 1200px) {
 }
