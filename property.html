@@ -65,7 +65,53 @@
       .button-brochure a:hover {
         color: #fff;
       }
+      .text-center.theme-button:hover {
+        background-color: #333;
+      }
+
+      @media only screen and (max-width: 500px) {
+        .carousel-item {
+          margin-top: 4rem;
+        }
+      }
     </style>
+
+    <!-- Meta Pixel Code -->
+    <script>
+      !(function (f, b, e, v, n, t, s) {
+        if (f.fbq) return;
+        n = f.fbq = function () {
+          n.callMethod
+            ? n.callMethod.apply(n, arguments)
+            : n.queue.push(arguments);
+        };
+        if (!f._fbq) f._fbq = n;
+        n.push = n;
+        n.loaded = !0;
+        n.version = "2.0";
+        n.queue = [];
+        t = b.createElement(e);
+        t.async = !0;
+        t.src = v;
+        s = b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t, s);
+      })(
+        window,
+        document,
+        "script",
+        "https://connect.facebook.net/en_US/fbevents.js"
+      );
+      fbq("init", "382009383935869");
+      fbq("track", "PageView");
+    </script>
+    <noscript
+      ><img
+        height="1"
+        width="1"
+        style="display: none"
+        src="https://www.facebook.com/tr?id=382009383935869&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Meta Pixel Code -->
   </head>
 
   <body>
@@ -73,39 +119,89 @@
       <!-- Preloader -->
       <!-- <div class="preloader"></div> -->
 
-      <header class="main-header">
-        <!--Header-Upper-->
-        <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light mb-3" style="box-shadow: 1px 1px #333;">
-          <a href="index.html" 
-          ><img src="assets/images/empire-logo.png" alt="Logo" style="margin-right: 30px;"
+      <header>
+        <nav
+          class="navbar fixed-top navbar-expand-lg navbar-light bg-light mb-3"
+          style="box-shadow: 1px 1px #333"
+        >
+          <a href="index.html"
+            ><img
+              src="assets/images/empire-logo.png"
+              alt="Logo"
+              style="margin-right: 30px"
           /></a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+            <ul class="navbar-nav m-2">
+              <li class="nav-item active m-2">
+                <a class="nav-link" href="index.html"
+                  >Home <span class="sr-only">(current)</span></a
+                >
               </li>
-              <li class="nav-item  active">
+              <li class="nav-item m-2">
                 <a class="nav-link" href="property.html">Scheme</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="services.html">Projects</a>
+              <li class="nav-item dropdown m-2">
+                <a
+                  class="nav-link dropdown-toggle"
+                  data-toggle="dropdown"
+                  href="#"
+                  role="button"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                  >Projects</a
+                >
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="services.html">Exotica</a>
+                  <a class="dropdown-item" href="project-serenity.html"
+                    >Serenity</a
+                  >
+                </div>
               </li>
-              <li class="nav-item">
+              <li class="nav-item m-2">
                 <a class="nav-link" href="contact.html">Contact us</a>
               </li>
             </ul>
-            <button class="p-10 ml-30 button-brochure">
-              <i class="fa fa-download mr-5"></i>
-              <a href="assets/ebrochure.pdf" download="E Brochure">
+
+            <div class="dropdown">
+              <button
+                class="btn btn-info dropdown-toggle"
+                type="button"
+                id="dropdownMenuButton"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                <i class="fa fa-download mr-5"></i>
                 E Brochure
-              </a>
-            </button>
+              </button>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a
+                  class="dropdown-item"
+                  href="https://drive.google.com/file/d/1CIjVOqVlorvjvUS-2xLNWHZBfLBv4_GA/view?usp=sharing"
+                  target="_blank"
+                  >Empire Exotica</a
+                >
+                <a
+                  class="dropdown-item"
+                  href="https://drive.google.com/file/d/19cXgkYgvDn2kFkXSbLw4L7l6KPTHXVRr/view?usp=sharing"
+                  target="_blank"
+                  >Empire Serenity</a
+                >
+              </div>
+            </div>
           </div>
         </nav>
-        <!--End Header Upper-->
       </header>
 
       <div class="form-back-drop"></div>
@@ -458,8 +554,14 @@
           <div class="container">
             <div class="bottom-inner">
               <div class="social-icons">
-                <a href="https://www.facebook.com/Empire-Developers-103682898517073/"><i class="fab fa-facebook-f"></i></a>
-                <a href="https://instagram.com/empiredevelopers_guwahati?utm_medium=copy_link"><i class="fab fa-instagram"></i></a>
+                <a
+                  href="https://www.facebook.com/Empire-Developers-103682898517073/"
+                  ><i class="fab fa-facebook-f"></i
+                ></a>
+                <a
+                  href="https://instagram.com/empiredevelopers_guwahati?utm_medium=copy_link"
+                  ><i class="fab fa-instagram"></i
+                ></a>
               </div>
               <div class="copyright">
                 <p>

@@ -466,7 +466,13 @@ input[type="submit"]:focus {
 /******************** 03. Page Banner ***************** */
 /****************************************************** */
 .banner-section {
-  background: url(../images/property-single-bg.jpeg);
+  background: url(../images/projects/exotica.png);
+  background-size: cover;
+  display: flex;
+  background-color: #000000;
+}
+.banner-section-serenity {
+  background: url(../images/projects/serenity.png);
   background-size: cover;
   display: flex;
   background-color: #000000;
@@ -510,7 +516,8 @@ input[type="submit"]:focus {
   background: transparent;
 }
 
-.banner-section nav {
+.banner-section nav,
+.banner-section-serenity nav {
   flex: none;
   padding: 17px 66px 16px;
   margin-top: auto;
@@ -518,7 +525,8 @@ input[type="submit"]:focus {
   background: #ca9c6a;
 }
 
-.banner-section nav li {
+.banner-section nav li,
+.banner-section-serenity nav li {
   display: inline-block;
   font-family: "Oswald", sans-serif;
   letter-spacing: 5px;
@@ -778,6 +786,12 @@ input[type="submit"]:focus {
 .rastaurant-left {
   background: url("../images/restaurants/rleft.jpeg") no-repeat center/cover;
   min-height: 500px;
+  height: 100%;
+}
+.empire-left {
+  background: url("../images/home/living.png") no-repeat center/cover;
+  min-height: 500px;
+  min-width: 100px;
   height: 100%;
 }
 

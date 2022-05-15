@@ -22,7 +22,10 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="assets/css/all.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
 
     <!-- Stylesheets -->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
@@ -36,8 +39,10 @@
     <link rel="stylesheet" href="assets/css/style.css" />
     <link rel="stylesheet" href="assets/css/responsive.css" />
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"
+    />
 
     <style>
       .pb-70,
@@ -45,7 +50,7 @@
         padding-top: 100px !important;
       }
       .button-brochure {
-        cursor: pointer; 
+        cursor: pointer;
         background-color: #fff;
         color: #333;
         border-radius: 5px;
@@ -60,7 +65,35 @@
       .button-brochure a:hover {
         color: #fff;
       }
+      .text-center.theme-button:hover {
+        background-color: #333;
+      }
+
+      @media only screen and (max-width: 500px) {
+        .carousel-item {
+          margin-top: 4rem;
+        }
+}
+
     </style>
+
+    <!-- Meta Pixel Code -->
+<script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '382009383935869');
+  fbq('track', 'PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=382009383935869&ev=PageView&noscript=1"
+  /></noscript>
+  <!-- End Meta Pixel Code -->
   </head>
 
   <body>
@@ -68,8 +101,7 @@
       <!-- Preloader -->
       <!-- <div class="preloader"></div> -->
 
-      <header class="main-header">
-        <!--Header-Upper-->
+      <header >
         <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light mb-3" style="box-shadow: 1px 1px #333;">
           <a href="index.html" 
           ><img src="assets/images/empire-logo.png" alt="Logo" style="margin-right: 30px;"
@@ -78,30 +110,38 @@
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-              <li class="nav-item">
+            <ul class="navbar-nav m-2">
+              <li class="nav-item active m-2">
                 <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
               </li>
-              <li class="nav-item">
+              <li class="nav-item m-2">
                 <a class="nav-link" href="property.html">Scheme</a>
               </li>
-              <li class="nav-item  active">
-                <a class="nav-link" href="services.html">Projects</a>
+              <li class="nav-item dropdown m-2">
+                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Projects</a>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="services.html">Exotica</a>
+                  <a class="dropdown-item" href="project-serenity.html">Serenity</a>
+                </div>
               </li>
-              <li class="nav-item">
+              <li class="nav-item m-2">
                 <a class="nav-link" href="contact.html">Contact us</a>
               </li>
             </ul>
-            <button class="p-10 ml-30 button-brochure">
-              <i class="fa fa-download mr-5"></i>
-              <a href="assets/ebrochure.pdf" download="E Brochure">
+            
+            <div class="dropdown">
+              <button class="btn btn-info dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <i class="fa fa-download mr-5"></i>
                 E Brochure
-              </a>
-            </button>
+              </button>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="https://drive.google.com/file/d/1CIjVOqVlorvjvUS-2xLNWHZBfLBv4_GA/view?usp=sharing" target="_blank">Empire Exotica</a>
+                <a class="dropdown-item" href="https://drive.google.com/file/d/19cXgkYgvDn2kFkXSbLw4L7l6KPTHXVRr/view?usp=sharing" target="_blank">Empire Serenity</a>
+              </div>
+            </div>
           </div>
         </nav>
-        <!--End Header Upper-->
-      </header>
+      </header>  
 
       <!--Form Back Drop-->
       <div class="form-back-drop"></div>
@@ -171,7 +211,7 @@
               <ol class="breadcrumb">
                 <li class="breadcrumb-item"><a href="index.html">Home</a></li>
                 <li class="breadcrumb-item active" aria-current="page">
-                  Projects
+                  Exocitca
                 </li>
               </ol>
             </nav>
