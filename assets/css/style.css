@@ -790,7 +790,7 @@ input[type="submit"]:focus {
 }
 .empire-left {
   background: url("../images/home/living.png") no-repeat center/cover;
-  min-height: 500px;
+  min-height: 290px;
   min-width: 100px;
   height: 100%;
 }
@@ -1110,6 +1110,12 @@ input[type="submit"]:focus {
   background: url("../images/faq/left.jpg") no-repeat center/cover;
   height: 100%;
   min-height: 500px;
+}
+.faq-right-image {
+  background: url(../images/faq/right.jpeg) no-repeat center/cover;
+  height: 100%;
+  min-height: 437px;
+  width: 532px;
 }
 
 .faq-accordion .section-title h6 {
@@ -1638,6 +1644,20 @@ blockquote {
     font-size: 22px;
   }
 }
+@media screen and (max-width: 450px) and (min-width: 381px) {
+  .faq-right-image {
+    width: 100%;
+    height: 390px;
+    min-height: 440px;
+  }
+}
+@media screen and (max-width: 380px) and (min-width: 300px) {
+  .faq-right-image {
+    width: 100%;
+    height: 390px;
+    min-height: 364px;
+  }
+}
 
 table {
   border-collapse: collapse;
@@ -1654,4 +1674,24 @@ td {
 
 tr:nth-child(even) {
   background-color: #f2f2f2;
+}
+/* Youtube video responsivness */
+.video-container {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.video-container::after {
+  padding-top: 56.25%;
+  display: block;
+  content: "";
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
