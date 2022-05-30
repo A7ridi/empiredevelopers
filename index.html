@@ -68,7 +68,68 @@
       .text-center.theme-button:hover {
         background-color: #333;
       }
+      .video-container {
+        height: 91vh
+      }
 
+      @media screen and (max-width: 450px) and (min-width: 381px) {
+        .video-container {
+          height: 28vh !important;
+        }
+        .empire-left {
+          min-height: 300px;
+        }
+      }
+      @media screen and (max-width: 380px) and (min-width: 300px) {
+        .video-container {
+          height: 28vh !important;
+        }
+        .empire-left {
+          min-height: 300px;
+        }
+      }
+      @media screen and (max-width: 768px) and (min-width: 501px) {
+        .video-container {
+          height: 48vh !important;
+        }
+        .empire-left {
+          min-height: 543px;
+        }
+      }
+      @media screen and (max-width: 900px) and (min-width: 769px) {
+        .video-container {
+          height: 33vh !important;
+        }
+        .empire-left {
+          min-height: 576px;
+        }
+      }
+      @media screen and (max-width: 1024px) and (min-width: 901px) {
+        .video-container {
+          height: 73vh !important;
+        }
+        .empire-left {
+          min-height: 450px;
+          height: 65%;
+          margin-left: -31px;
+        }
+        .rastaurant-right{
+          padding-bottom: 0px;
+        }
+        .rastaurant-right h2 {
+          line-height: 94px;
+        }
+      }
+      @media screen and (max-width: 1440px) and (min-width: 1025px) {
+        .video-container {
+          height: 88vh !important;
+        }
+      }
+      @media screen and (max-width: 2560px) and (min-width: 1921px) {
+        .video-container {
+          height: 91vh !important;
+        }
+      }
       @media only screen and (max-width: 500px) {
         .carousel-item {
           margin-top: 4rem;
@@ -298,7 +359,7 @@
       <div class="video-section mt-40">
         <div class="container">
           <div class="video-container"> 
-            <iframe src="https://www.youtube.com/embed/WS_ZG0FrmVM" title="Empire Exotica" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="width: 100%; height: 100%;"></iframe>
+            <iframe id="frame" src="https://www.youtube.com/embed/WS_ZG0FrmVM" title="Empire Exotica" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="width: 100%; height: 100%;"></iframe>
           </div>
         </div>
       </div>
@@ -392,7 +453,7 @@
                   <div class="apartment-img">
                     <img src="assets/images/apartment/2 bhk.jpg" alt="Apartment" />
                   </div>
-                  <div class="apartment-content">
+                  <div class="apartment-content" onclick="location.href='property-2bhk.html'">
                     <a href="property-single.html">
                       <img src="assets/images/apartment/icon1.png" alt="Icon" />
                       <h3><a href="property-2bhk.html">2 BHK APARTMENT</h3>
@@ -402,7 +463,7 @@
                   </div>
                 </div>
                 <div class="apartment-item">
-                  <div class="apartment-content">
+                  <div class="apartment-content" onclick="location.href='property-3bhk.html'">
                     <a href="property-single.html">
                       <img src="assets/images/apartment/icon2.png" alt="Icon" />
                       <h3><a href="property-3bhk.html">3 BHK APARTMENT</h3>
@@ -418,7 +479,7 @@
                   <div class="apartment-img">
                     <img src="assets/images/apartment/4bhk.jpg" alt="Apartment" />
                   </div>
-                  <div class="apartment-content">
+                  <div class="apartment-content" onclick="location.href='property-4bhk.html'">
                     <a href="property-4bhk.html">
                     <img src="assets/images/apartment/icon3.png" alt="Icon" />
                     <h3><a href="property-4bhk.html">4 BHK APARTMENT</h3>
@@ -428,7 +489,7 @@
                   </div>
                 </div>
                 <div class="apartment-item">
-                  <div class="apartment-content">
+                  <div class="apartment-content" onclick="location.href='property-duplex.html'">
                     <a href="property-single.html">
                     <img src="assets/images/apartment/icon2.png" alt="Icon" />
                     <h3><a href="property-duplex.html">Duplex Apartment</h3>
@@ -449,7 +510,7 @@
                   <div class="apartment-img">
                     <img src="assets/images/apartment/1bhk-serenity.png" alt="Apartment" />
                   </div>
-                  <div class="apartment-content">
+                  <div class="apartment-content" onclick="location.href='serenity-1bhk.html'">
                     <a href="serenity-1bhk.html">
                       <img src="assets/images/apartment/icon1.png" alt="Icon" />
                       <h3><a href="serenity-1bhk.html">1 BHK APARTMENT</h3>
@@ -459,7 +520,7 @@
                   </div>
                 </div>
                 <div class="apartment-item">
-                  <div class="apartment-content">
+                  <div class="apartment-content" onclick="location.href='serenity-1bhk.html'">
                     <a href="serenity-1bhk.html">
                       <img src="assets/images/apartment/icon2.png" alt="Icon" />
                       <h3><a href="serenity-1bhk.html">2 BHK APARTMENT</h3>
@@ -475,7 +536,7 @@
                   <div class="apartment-img">
                     <img src="assets/images/apartment/3bhk-serenity.png" alt="Apartment" />
                   </div>
-                  <div class="apartment-content">
+                  <div class="apartment-content" onclick="location.href='serenity-1bhk.html'">
                     <a href="serenity-1bhk.html">
                     <img src="assets/images/apartment/icon3.png" alt="Icon" />
                     <h3><a href="serenity-1bhk.html">3 BHK APARTMENT</h3>
@@ -643,8 +704,10 @@
       <section class="faq-section">
         <div class="container-fluid">
           <div class="row pt-20">
-            <div class="col-lg-6 pr-125 rpr-15">
-              <div class="faq-right-image"></div>
+            <div class="col-lg-6">
+              <div class="faq-right-image1">
+                <img class="faq-right-image" src="/assets/images/faq/right.jpeg" alt="Empire Serenity Location " />
+              </div>
             </div>
             <div class="col-lg-6 pl-0">
               <div class="faq-accordion ras-content pt-95 pb-110 rpb-0 rmb-100">
