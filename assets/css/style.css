@@ -950,6 +950,7 @@ input[type="submit"]:focus {
   background: url("../images/apartment/property-1.jpg") no-repeat center/cover;
   padding: 40px 40px 40px 55px;
   height: 888px;
+  width: 586px;
   display: flex;
   align-items: flex-end;
 }
